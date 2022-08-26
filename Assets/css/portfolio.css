@@ -1,17 +1,31 @@
 body {
+    text-align: center;
     background-color: darkgoldenrod;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+}
+#myName{
+    color:darkgoldenrod;
 }
 h1,
 h2 {
     text-align: center;
 }
-header {
+/*header*/
+.header {
     padding: 60px;
-    align-items: center;
+    align-items: center, block;
     background: #13293d;
-    color: #fff;
+    color:#fff;
+}
+.display-inline{
+    display: block;
+    align-items: center;
+}
+.image-padding
+/* Adds padding of 20px to all sides of image*/ {
+    padding: 20px;
+    background-color:cadetblue;
 }
 
 .card {
@@ -24,39 +38,49 @@ header {
 .card header {
     padding: 20px;
     background: #13293d;
-    color: #fff;
+    color:darkgoldenrod;
 }
 .display-inline {
     display: inline;
 }
-
+body {background-color: #13293d;}
 main {
     display: flex;
     align-items: center;
+    background-color: #13293d;
 }
 
 section {
     flex: 70%;
     background-color: #fff;
     padding: 20px;
-    align-items: center;
+    align-items: inline;
 }
 
-button {
+#absolute-section{
+    position: relative;
+}
+.button {
     width: 300px;
     margin: 0 .5%;
     font-size: 200%;
-    color:darkgoldenrod; 
+    color:#fff; 
     background-color: darkgoldenrod; 
     border: 3px solid #13293d;
+    
 }
 
-button:hover {
+.button:hover {
     background-color:cadetblue;
     color: #fff;
 }
 
-button:active {
+.button:active {
     font-size: 180%;
     box-shadow: 0 0 10px #000 inset;
 }
+@media only screen and (max-width: 600px) {
+    body {
+      background-color:darkgoldenrod;
+    }
+  }
